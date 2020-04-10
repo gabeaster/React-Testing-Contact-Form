@@ -29,7 +29,7 @@ test('Test that values can be entered into each field', () => {
     const messageField = getByLabelText(/Message/i);
 
     //Act-type a character into the field
-    fireEvent.change(firstNameField, {target: {value: "abcde"}});
+    fireEvent.change(firstNameField, {target: {value: ""}});
     fireEvent.change(lastNameField, {target: {value: "abcde"}});
     fireEvent.change(emailField, {target: {value: "abcde"}});
     fireEvent.change(messageField, {target: {value: "abcde"}});
